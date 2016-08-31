@@ -1,0 +1,8 @@
+<template name="diagram">
+  <h1>Diagram</h1>
+  <svg id="diagram" width="1000px" height="75px">
+    {{#each teeth}}
+      <path d="{{toothPath}}" transform="{{toothTransform}}" fill="{{color}}"/>
+    {{/each}}
+  </svg>
+</template>
