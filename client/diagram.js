@@ -12,9 +12,7 @@ Template.diagram.onCreated(function diagramOnCreated() {
 
 Template.diagram.helpers({
   teeth() {
-    var teeth = Teeth.find();
-    console.log(teeth.count());
-    return teeth;
+    return Teeth.find();
   },
 
   toothPath(){
